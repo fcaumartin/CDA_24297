@@ -1,0 +1,7 @@
+@startuml
+
+Client --> (Consulte le catalogue)
+
+Concessionnaire --> (Enregistrer une commande)
+Commercial --> (Enregistrer une commande)
+@enduml
