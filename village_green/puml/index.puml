@@ -1,0 +1,32 @@
+@startuml
+class SousCategorie {
+	**id : int**
+	nom : string
+	image : string
+	<color:#0000dd>categorie : Categorie</color>
+	<color:#0000dd>produits : Produit[]</color>
+}
+
+class Produit {
+	**id : int**
+	nom : string
+	image : string
+	<color:#0000dd>sousCategorie : SousCategorie</color>
+}
+
+class Categorie {
+	**id : int**
+	nom : string
+	image : string
+	<color:#0000dd>sousCategories : SousCategorie[]</color>
+}
+
+SousCategorie "*"--"1" Categorie
+SousCategorie "1"--"*" Produit
+
+
+hide methods
+
+hide circle
+
+@enduml
