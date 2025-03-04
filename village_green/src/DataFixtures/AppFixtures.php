@@ -27,6 +27,21 @@ class AppFixtures extends Fixture
         $p1->setSousCategorie($sc1);
         $manager->persist($p1);
 
+        $p2 = new Produit();
+        $p2->setNom('Fender Stratocaster2');
+        $p2->setSousCategorie($sc1);
+        $manager->persist($p2);
+
+        $p3 = new Produit();
+        $p3->setNom('Fender Stratocaster3');
+        $p3->setSousCategorie($sc1);
+        $manager->persist($p3);
+
+        $p4 = new Produit();
+        $p4->setNom('Fender Stratocaster4');
+        $p4->setSousCategorie($sc1);
+        $manager->persist($p4);
+
 
         $sc2 = new SousCategorie();
         $sc2->setNom('Classiques');
@@ -40,6 +55,26 @@ class AppFixtures extends Fixture
         $c3 = new Categorie();
         $c3->setNom('Percussions');
         $manager->persist($c3);
+
+        $c4 = new Categorie();
+        $c4->setNom('Categorie 4');
+        $manager->persist($c4);
+
+        $c5 = new Categorie();
+        $c5->setNom('Percussions');
+        $manager->persist($c5);
+
+        $c6 = new Categorie();
+        $c6->setNom('Percussions');
+        $manager->persist($c6);
+
+        $c7 = new Categorie();
+        $c7->setNom('Percussions');
+        $manager->persist($c7);
+
+        $c8 = new Categorie();
+        $c8->setNom('Percussions');
+        $manager->persist($c8);
 
         $manager->flush();
     }
