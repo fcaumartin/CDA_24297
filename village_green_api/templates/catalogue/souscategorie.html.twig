@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello CatalogueController!{% endblock %}
+
+{% block body %}
+<h1>{{sousCategorie.nom}}</h1>
+
+<div class="row">
+    {% for produit in sousCategorie.produits %}
+        <div class="col-12 mb-3">
+            <a href="/produit/{{produit.id}}">
+                <div class="card" style="width: 100%">
+                    <div class="card-body">
+                        <h5 class="card-title">{{produit.nom}}</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

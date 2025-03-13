@@ -1,0 +1,36 @@
+GET https://127.0.0.1:8001/api/categories
+Accept: application/json
+
+###
+
+GET https://127.0.0.1:8001/api/categories/1
+Accept: application/json
+
+###
+
+POST https://127.0.0.1:8001/api/categories
+Accept: application/json
+Content-Type: application/json
+
+{
+  "nom": "test",
+  "image": "test"
+}
+
+
+###
+
+DELETE https://127.0.0.1:8001/api/categories/11
+Accept: application/json
+
+
+### 
+
+PATCH https://127.0.0.1:8001/api/categories/9
+Accept: application/json
+Content-Type: application/merge-patch+json
+
+{
+  "nom": "test999"
+}
+
