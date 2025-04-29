@@ -1,0 +1,36 @@
+@startgantt project
+Language fr
+hide footbox
+Project starts 2025-04-29
+saturday are closed
+sunday are closed
+
+2025-05-01 to 2025-05-02 is closed
+2025-05-08 to 2025-05-09 is closed
+2025-05-29 to 2025-05-30 is closed
+
+
+[Définir le budget] as [A] requires 1 days
+[Élaborer le cahier des charges] as [B] requires 8 days
+[Pré-sélectionner les prestataires] as [C] requires 2 days
+[Consulter les candidats] as [D] requires 15 days
+[Arrêter le choix du prestataire] as [E] requires 2 days
+[Réaliser les maquettes du site] as [F] requires 3 days
+[Développer les fonctions] as [G] requires 10 days
+[Réaliser l'intégration graphique] as [H] requires 5 days
+[Tester et Valider le site] as [I] requires 5 days
+
+
+
+[B] starts at [A]'s end
+[C] starts at [B]'s end
+[D] starts at [C]'s end
+[E] starts at [D]'s end
+[F] starts at [E]'s end
+[G] starts at [F]'s end
+[H] starts at [F]'s end
+
+[I] starts at [H]'s end
+[I] starts at [G]'s end
+
+@endgantt
